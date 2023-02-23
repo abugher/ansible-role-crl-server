@@ -38,3 +38,4 @@ symlinks:
     dest:               '/etc/nginx/sites-enabled/crl'
 restart_services:
   - 'nginx'
+  - 'nginx'
