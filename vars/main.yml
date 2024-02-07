@@ -4,28 +4,28 @@ create_files:
     group:              'root'
     mode:               '0755'
     state:              'directory'
-    path:               '/usr/share/nginx/www/ca'
+    path:               '/usr/share/nginx/html/ca'
 install_files:
   - owner:              'root'
     group:              'root'
     mode:               '0644'
     src:                "../../../certificate-authority/ca/intermediate/crl.der"
-    dest:               '/usr/share/nginx/www/intermediate.crl.der'
+    dest:               '/usr/share/nginx/html/intermediate.crl.der'
   - owner:              'root'
     group:              'root'
     mode:               '0644'
     src:                "../../../certificate-authority/ca/root/crl.der"
-    dest:               '/usr/share/nginx/www/root.crl.der'
+    dest:               '/usr/share/nginx/html/root.crl.der'
   - owner:              'root'
     group:              'root'
     mode:               '0644'
     src:                "../../../certificate-authority/ca/intermediate/crl.pem"
-    dest:               '/usr/share/nginx/www/ca/intermediate.crl.pem'
+    dest:               '/usr/share/nginx/html/ca/intermediate.crl.pem'
   - owner:              'root'
     group:              'root'
     mode:               '0644'
     src:                "../../../certificate-authority/ca/root/crl.pem"
-    dest:               '/usr/share/nginx/www/ca/root.crl.pem'
+    dest:               '/usr/share/nginx/html/ca/root.crl.pem'
   - owner:              'root'
     group:              'root'
     mode:               '0644'
